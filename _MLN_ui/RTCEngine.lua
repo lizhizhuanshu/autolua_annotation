@@ -220,9 +220,9 @@ end
 ---
 ---@param url string  音乐文件路径 
 ---@param publish boolean  true 推流到远端, false 只是本地播放 
----@param repeatCount number  循环播放次数, -1表示无限循环
+---@param repeat number  循环播放次数, -1表示无限循环
 ---@return RTCEngine 
-function _class:playBGM(url, publish,repeatCount)
+function _class:playBGM(url, publish, repeat)
 	return self
 end
 

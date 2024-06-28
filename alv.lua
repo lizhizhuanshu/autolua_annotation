@@ -88,7 +88,7 @@ end
 ---是否符合特征描述
 ---@param bitmap Bitmap 位图对象
 ---@param feature Feature 特征描述
----@param sim integer 相似度，取值范围 0-100
+---@param sim integer 相似度，取值范围 0-1
 ---@return boolean 是否符合特征描述
 function M.isFeature(bitmap,feature,sim)
   error("not implemented")

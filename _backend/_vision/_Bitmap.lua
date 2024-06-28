@@ -65,7 +65,7 @@ end
 
 ---是否符合特征描述
 ---@param feature Feature 特征描述
----@param sim integer 相似度，取值范围 0-100
+---@param sim integer 相似度，取值范围 0-1
 ---@return boolean 是否符合特征描述
 function M:isFeature(feature,sim)
   error("not implemented")
