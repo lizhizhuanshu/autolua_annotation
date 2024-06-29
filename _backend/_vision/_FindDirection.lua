@@ -1,6 +1,6 @@
 ---图色函数的查找方向
 ---@enum FindDirection
-local M = {
+FindDirection = {
   ---从上到下，从左到右
   UP_DOWN_LEFT_RIGHT=0,
   ---从上到下，从右到左
@@ -19,6 +19,3 @@ local M = {
   RIGHT_LEFT_DOWN_UP=7,
 }
 
-
-
-return M

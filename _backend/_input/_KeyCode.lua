@@ -1,7 +1,7 @@
 
 ---移动端常用的按键值枚举,目前只支持硬件按键
 ---@enum KeyCode
-local M = {
+KeyCode = {
   ---Home键
   HOME = 172,
   ---返回键
@@ -16,5 +16,3 @@ local M = {
   POWER = 116
 }
 
-
-return M
