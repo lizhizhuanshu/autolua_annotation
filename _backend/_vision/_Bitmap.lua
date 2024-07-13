@@ -3,7 +3,6 @@
 ---@class Bitmap
 local M = {}
 
----@alias ColorInt integer
 ---@alias ColorDescribe string|integer
 ---@alias ImageDescribe string
 
@@ -13,7 +12,7 @@ local M = {}
 ---获取指定坐标的颜色
 ---@param x integer 横轴坐标
 ---@param y integer 纵轴坐标
----@return ColorInt 坐标颜色，格式RGB
+---@return integer 坐标颜色，格式RGB
 function M:getColor(x,y)
   error("not implemented")
 end
@@ -44,7 +43,7 @@ end
 ---@param y integer 纵轴坐标
 ---@param color ColorDescribe 颜色描述
 ---@param sim number 相似度，取值范围 0-1
----@return integer 颜色索引，没有符合则返回 0
+---@return integer 颜色索引，没有符合则返回0
 function M:whichColor(x,y,color,sim)
   error("not implemented")
 end
@@ -55,10 +54,10 @@ end
 ---@param x2 integer 要查找的范围的横轴结束点坐标
 ---@param y2 integer 要查找的范围的纵轴结束点坐标
 ---@param color ColorDescribe 颜色描述
----@param order FindDirection 查找方向
+---@param order FindOrder 查找方向
 ---@param sim number 相似度，取值范围 0-1
----@return integer 找到的横轴坐标，没有找到则返回 -1
----@return integer 找到的纵轴坐标，没有找到则返回 -1
+---@return integer 找到的横轴坐标，没有找到则返回-1
+---@return integer 找到的纵轴坐标，没有找到则返回-1
 function M:findColor(x1,y1,x2,y2,color,order,sim)
   error("not implemented")
 end
@@ -77,10 +76,10 @@ end
 ---@param x2 integer 要查找的范围的横轴结束点坐标
 ---@param y2 integer 要查找的范围的纵轴结束点坐标
 ---@param feature Feature 特征描述
----@param order FindDirection 查找方向
+---@param order FindOrder 查找方向
 ---@param sim number 相似度，取值范围 0-1
----@return integer 找到的横轴坐标，没有找到则返回 -1
----@return integer 找到的纵轴坐标，没有找到则返回 -1
+---@return integer 找到的横轴坐标，没有找到则返回-1
+---@return integer 找到的纵轴坐标，没有找到则返回-1
 function M:findFeature(x1,y1,x2,y2,feature,order,sim)
   error("not implemented")
 end
@@ -100,7 +99,7 @@ end
 ---@param y integer 要对比图像的起点纵轴坐标
 ---@param image ImageDescribe 图像描述
 ---@param sim number 相似度，取值范围 0-1
----@return integer 图像索引，没有符合则返回 0
+---@return integer 图像索引，没有符合则返回0
 function M:whichImage(x,y,image,sim)
   error("not implemented")
 end
@@ -111,10 +110,10 @@ end
 ---@param x2 integer 要查找的范围的横轴结束点坐标
 ---@param y2 integer 要查找的范围的纵轴结束点坐标
 ---@param image ImageDescribe 图像描述
----@param order FindDirection 查找方向
+---@param order FindOrder 查找方向
 ---@param sim number 相似度，取值范围 0-1
----@return integer 找到的横轴坐标，没有找到则返回 -1
----@return integer 找到的纵轴坐标，没有找到则返回 -1
+---@return integer 找到的横轴坐标，没有找到则返回-1
+---@return integer 找到的纵轴坐标，没有找到则返回-1
 function M:findImage(x1,y1,x2,y2,image,order,sim)
   error("not implemented")
 end

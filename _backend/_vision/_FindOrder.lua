@@ -1,6 +1,6 @@
 ---图色函数的查找方向
----@enum FindDirection
-FindDirection = {
+---@enum FindOrder
+FindOrder = {
   ---从上到下，从左到右
   UP_DOWN_LEFT_RIGHT=0,
   ---从上到下，从右到左

@@ -3,16 +3,16 @@
 ---@enum KeyCode
 KeyCode = {
   ---Home键
-  HOME = 172,
+  HOME = 3,
   ---返回键
-  BACK = 278,
+  BACK = 4,
   ---菜单键
-  MENU = 139,
+  MENU = 82,
   ---音量加
-  VOLUME_UP = 115,
+  VOLUME_UP = 24,
   ---音量减
-  VOLUME_DOWN = 114,
+  VOLUME_DOWN = 25,
   ---电源键
-  POWER = 116
+  POWER = 26
 }
 
